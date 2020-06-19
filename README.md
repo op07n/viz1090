@@ -1,3 +1,5 @@
+Duplicate of https://github.com/nmatsuda/viz1090
+
 # viz1090
 
 **This is work in progress**
