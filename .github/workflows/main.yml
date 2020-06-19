@@ -1,0 +1,26 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    env:
+      MSYS2_ARCH: i686
+    steps:
+    - uses: actions/checkout@v1
+    - uses: eine/setup-msys2@v0      
+      with:
+        update: true
+        msystem: MINGW32
+                
+    - name: Install MSYS2 Dependencies
+      run:  msys2do pacman --noconfirm -S --needed mingw-w64-i686-gcc mingw-w64-i686-SDL2 mingw-w64-i686-SDL2_gfx mingw-w64-i686-SDL2_ttf make
+    - name: make
+      run:  msys2do make
+       
+    - uses: actions/upload-artifact@v1
+      with:
+          name: artifact
+          path: .
