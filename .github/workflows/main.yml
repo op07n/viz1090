@@ -10,7 +10,7 @@ jobs:
       MSYS2_ARCH: i686
     steps:
     - uses: actions/checkout@v1
-    - uses: eine/setup-msys2@v0      
+    - uses: eine/setup-msys2@v1      
       with:
         update: true
         msystem: MINGW32
