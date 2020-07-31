@@ -4,7 +4,7 @@
 #
 
 CXXFLAGS=-O2 -std=c++11
-LIBS= -lm -lSDL2 -lSDL2_ttf -lSDL2_gfx
+LIBS= -lm -lSDL2 -lSDL2_ttf -lSDL2_gfx -lws2_32 -lwsock32
 CXX=g++
 
 all: viz1090
