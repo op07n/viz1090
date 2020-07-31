@@ -86,6 +86,9 @@ int WINAPI WinMain(HINSTANCE hInstance,
     appData.initialize();
 
     // Parse the command line options
+    
+    /******************************************
+    
     for (j = 1; j < argc; j++) {
         int more = ((j + 1) < argc); // There are more arguments
 
@@ -119,6 +122,40 @@ int WINAPI WinMain(HINSTANCE hInstance,
             exit(1);
         }
     }
+    
+    **********************************************/
+    
+    
+    
+    
+               appData.modes.net_input_beast_port = 4000;
+    
+            std::strcpy(appData.server, "127.0.0.1");            
+      
+            appData.modes.fUserLat = atof("0.0");
+            view.centerLat = appData.modes.fUserLat;
+       
+            appData.modes.fUserLon = atof("0.0");
+            view.centerLon = appData.modes.fUserLon;
+     
+            view.metric = 1;
+    
+            view.fullscreen = 1;         
+     
+            view.screen_index = atoi("1");         
+     
+            view.screen_uiscale = atoi("1");   
+       
+            view.screen_width = atoi("800");        
+            view.screen_height = atoi("800"); 
+    
+    
+    
+    
+    
+    
+    
+    
     
     int go;
 
