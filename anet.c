@@ -44,6 +44,15 @@
   #include <stdarg.h>
   #include <stdio.h>
 #else
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <fcntl.h>
   #include "winstubs.h" //Put everything Windows specific in here
   #include "dump1090.h"
 #endif
