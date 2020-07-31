@@ -54,7 +54,9 @@
     #include "rtl-sdr.h"
     #include "anet.h"
 #else
-    #include "winstubs.h" //Put everything Windows specific in here
+    // #include "winstubs.h" //Put everything Windows specific in here
+    #include <winsock2.h>
+    #include <ws2tcpip.h>
 #endif
 
 // ============================= #defines ===============================
