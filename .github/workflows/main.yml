@@ -16,7 +16,7 @@ jobs:
         msystem: MINGW32
                 
     - name: Install MSYS2 Dependencies
-      run:  msys2 pacman --noconfirm -S --needed mingw-w64-i686-gcc mingw-w64-i686-SDL2 mingw-w64-i686-SDL2_gfx mingw-w64-i686-SDL2_ttf make
+      run:  msys2 pacman --noconfirm -S --needed mingw-w64-i686-gcc mingw-w64-i686-SDL2 mingw-w64-i686-SDL2_gfx mingw-w64-i686-SDL2_ttf mingw-w64-i686-libwinpthread make
     - name: make
       run:  msys2 make
        
