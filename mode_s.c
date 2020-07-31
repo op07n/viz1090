@@ -29,6 +29,8 @@
 //
 
 #include "dump1090.h"
+
+#define M_PI 3.14159265358979
 //
 // ===================== Mode S detection and decoding  ===================
 //
