@@ -6,3 +6,5 @@
 #include <direct.h>
 #include <stdint.h>
 #include <pthread.h>
+#include <cstdio>
+#define usleep(x) Sleep(x/1000)
