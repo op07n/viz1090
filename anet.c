@@ -44,9 +44,16 @@
   #include <stdarg.h>
   #include <stdio.h>
 #else
-  # include <winsock2.h> 
 
-  #include "winstubs.h" //Put everything Windows specific in here
+#include <winsock2.h>  /* setsocketopt */
+#include <ws2tcpip.h>
+#include <windows.h>
+#include <float.h>
+#include <fcntl.h>    /* _O_BINARY */
+#include <limits.h>  /* INT_MAX */
+#include <process.h>
+#include <sys/types.h>
+// #include "winstubs.h" //Put everything Windows specific in here
   #include "dump1090.h"
 #endif
 
