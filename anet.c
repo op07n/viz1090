@@ -230,7 +230,7 @@ static int anetTcpGenericConnect(char *err, char *addr, int port, int flags) {
 
     return s;
 }  
-  
+#endif  
   
   
 int anetTcpConnect(char *err, char *addr, int port)
