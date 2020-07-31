@@ -82,7 +82,8 @@ void AppData::disconnect() {
 
 
 void AppData::update() {
-    if ((fd == ANET_ERR) || (recv(c->fd, pk_buf, sizeof(pk_buf), MSG_PEEK | MSG_DONTWAIT) == 0)) {
+    // if ((fd == ANET_ERR) || (recv(c->fd, pk_buf, sizeof(pk_buf), MSG_PEEK | MSG_DONTWAIT) == 0)) {
+    if ((fd == ANET_ERR) || (recv(c->fd, pk_buf, sizeof(pk_buf), MSG_PEEK ) == 0)) {
         free(c);
         usleep(1000000);
         c = (struct client *) malloc(sizeof(*c));
