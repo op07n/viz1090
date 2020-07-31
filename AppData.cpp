@@ -31,6 +31,8 @@
 
 #include "AppData.h"
 
+#include <cstdio>
+
 //
 //carried over from view1090.c
 //
