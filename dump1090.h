@@ -263,7 +263,7 @@ typedef struct Modes{                             // Internal state
     int           dev_index;
     int           gain;
     int           enable_agc;
-    rtlsdr_dev_t *dev;
+    /////////////                          rtlsdr_dev_t *dev;
     int           freq;
     int           ppm_error;
 
